@@ -1,0 +1,18 @@
+<Configuration>
+    <Appenders>
+        <Kafka name="Kafka" topic="logs">
+            <Property name="bootstrap.servers">localhost:9092</Property>
+            <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"/>
+<!--            %d — когда произошло событие-->
+<!--            %p — уровень важности сообщения-->
+<!--            %c{1.} — имя класса или компонента, откуда пришло сообщение (только последний сегмент)-->
+<!--            %t — поток, в котором сработал лог-->
+<!--            %m — само сообщение-->
+        </Kafka>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Kafka"/>
+        </Root>
+    </Loggers>
+</Configuration>
