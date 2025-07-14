@@ -7,7 +7,7 @@
 <dependency>
     <groupId>com.yourcompany.log4j2</groupId>
     <artifactId>log4j2-kafka-appender</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.2</version>
 </dependency>
 ~~~
 # [Пример конфигурации:](src/main/resources/log4j2-example.xml)
